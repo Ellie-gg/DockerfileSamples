@@ -1,0 +1,4 @@
+FROM alpine:latest
+RUN adduser --home /app/ -S docker -u 608
+USER docker
+RUN mkdir -p /app/config
