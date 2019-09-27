@@ -1,0 +1,5 @@
+FROM debian:latest
+RUN useradd -ms /bin/bash docker -u 608 -d /app
+USER docker
+RUN mkdir -p /app/config
+RUN mkdir -p /app/log
